@@ -1,5 +1,11 @@
+header {
+    background-image: url(banner.jpg);
+}
+
+
+
 body {
-    background-image: url(background.jpg);
+   background-color: whitesmoke;
 }
 
 h1 {
@@ -12,4 +18,29 @@ h2 {
 
 p {
     color: cornsilk
+}
+
+/*Navigaton Bar*/
+.topnav {
+    overflow:hidden;
+    background-color: slategrey;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: darkslategray;
+    color: white    
+}
+
+.topnav a:selection {
+    background-color: grey;
+    color: white
 }
