@@ -1,12 +1,17 @@
+
+
+
+
+/*General Text  Style*/
 header {
-    background-image: url(banner.jpg);
+    background-image: url(banner.svg);
 }
 body {
-   background-color: whitesmoke;
+   background-color: #EEEEEE;
 }
 
 h1 {
-    color: mediumorchid
+    color: 
 }
 
 h2 {
@@ -14,11 +19,58 @@ h2 {
 }
 
 p {
-    color: cornsilk
+    color: rgb(9, 1, 32)
 }
 
 /*Navigaton Bar*/
-.topnav {
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b882ee;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ee82ee;
+  }
+  
+  .active {
+    background-color: #ee82b8;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .topnav {
     overflow:hidden;
     background-color: slategrey;
 }
@@ -40,4 +92,4 @@ p {
 .topnav a:selection {
     background-color: grey;
     color: white
-}
+} */
