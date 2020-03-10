@@ -8,6 +8,7 @@ header {
     background-image: url('banner3.png');
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
 }
 
 body {
