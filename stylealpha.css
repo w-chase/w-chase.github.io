@@ -1,9 +1,8 @@
 /*Header and Banner*/
-.banner {
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: scroll;
-    max-width: 100%
+header {
+    position: center top;
+    
+    max-width: 100%;
 }
 
 
