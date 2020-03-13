@@ -1,12 +1,10 @@
-/*Header and Banner*/
-header {
-    position: center top;
-    height: auto;
-    max-width: 100%;
+.header { 
+    min-width: 100%;
+    height: 500px;
+    display: block;
+    background: url("unify_the_west_white_banner.png") center center grey;
+  background-size: cover;
 }
-
-
-
 /*General Text  Style*/
 
 body {
