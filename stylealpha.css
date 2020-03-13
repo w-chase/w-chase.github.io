@@ -35,7 +35,7 @@ body {
      margin: 0;
      padding: 0;
      overflow: hidden;
-     background-color: #b882ee;
+     background-color: #6c8cf5;
      position: static ;
      top: 0;
      width: 100%;
@@ -54,9 +54,9 @@ body {
    }
    
    li a:hover:not(.active) {
-     background-color: #ee82ee;
+     background-color: #653ef1;
    }
    
    .active {
-     background-color: #ee82b8;
+     background-color: #1d0cb6;
    }
