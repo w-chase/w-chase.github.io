@@ -1,7 +1,7 @@
 /*Header and Banner*/
 header {
     position: center top;
-    
+    height: auto;
     max-width: 100%;
 }
 
