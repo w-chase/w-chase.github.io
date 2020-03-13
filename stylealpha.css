@@ -1,7 +1,64 @@
-body {
-    background-color: royalblue;
+/*Header and Banner*/
+header {
+    background-image: url('unify_the_west_white_banner.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
 }
 
-h1 {
-    color
-}
+
+
+/*General Text  Style*/
+
+body {
+    background-color: white
+ }
+ 
+ h1 {
+     color: blue
+ }
+ 
+ h2 {
+     color: royalblue
+ }
+ 
+ p {
+     color: darkslategrey
+ }
+ 
+ section { padding-top: 2%;
+ 
+ }
+ 
+ /*Navigaton Bar*/
+ 
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #b882ee;
+     position: static ;
+     top: 0;
+     width: 100%;
+   }
+   
+   li {
+     float: left;
+   }
+   
+   li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   li a:hover:not(.active) {
+     background-color: #ee82ee;
+   }
+   
+   .active {
+     background-color: #ee82b8;
+   }
