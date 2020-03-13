@@ -3,7 +3,7 @@
     height: 500px;
     display: block;
     background: url("unify_the_west_white_banner.png") center center grey;
-  background-size: cover;
+  background-size: contain;
 }
 /*General Text  Style*/
 
