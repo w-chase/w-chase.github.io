@@ -1,41 +1,82 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-    <meta charset="utf-8">
-    <title>Grade Eh! Enterprises - Home</title>
-    <meta name="description" content="Developing the World"/>
-    <meta name="keywords" content="Developer,Development,Website,Website Design,Software,Design,Future">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="stylecharlie.css">
-    <link rel="icon" href="media/tab_icon.png" type="image"/>
-</head>
+<html lang='en-CA'>
+    <head>
+        <meta charset="utf-8">
+        <title>w-chase Portfolio</title>
+        <meta name="description" content="The portfolio page for w-chase, showcasing previous projects completed.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="primary.css" rel="stylesheet">
+        <link href="32x32_logo.png" rel="icon">
+    </head>
+    <body>
+        <header id="header-block">
+            <img src="cw_logo.svg" id="cw_logo" alt="Logo for w-chase">
+            <h1 id="page-title"></h1>Chase Williams</h1>
+        </header>
+        <nav id="navbar">
+            <a href="#welcome-section">Welcome</a>
+            <a href="#projects">Projects</a>
+            <a href="#profile-section">Profile</a>
+        </nav>
+        <main>
+            <section id="welcome-section">
+                <h1 class="section-header">About Me</h1>
+                <h2 class="sub-heading-1">Background</h2>
+                <h2 class="sub-heading-1">Certifications</h2>
+            </section>
 
-<body>
-    <header>
-        <div class="header"></div>
+            <section id="projects">
+                <h1 class="section-header">Personal Projects</h1>
+                <h2 class="sub-heading-1">freeCodeCamp</h2>
+                <h3 class="sub-heading-2">Responsive Web Design Projects</h3>
+                <div class="project-tile">
+                    <h4 class="sub-heading-3">Tribute Page</h4>
+                    <img src="tribute_page.png" class="project-thumbnail-img">
+                    <a href="https://w-chase.github.io/FCCWebDes/" target="_blank">Visit the project</a>
+                    <p class="text-style-1">Required User Stories</p>
+                    <ul class="list-style-1">
+                        <li class="text-style-2"><strong>User Story #1:</strong>My tribute page should have an element with a corresponding <code>id="main"</code>, which contains all other elements.</li>
 
-    </header>
-
-    <div class="navbar">
+                        <li class="text-style-2"><strong>User Story #2:</strong> I should see an element with a corresponding <code>id="title"</code>, which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").</li>
+                        
+                        <li class="text-style-2"><strong>User Story #3:</strong> I should see a div element with a corresponding <code>id="img-div"</code>.</li>
+                        
+                        <li class="text-style-2"><strong>User Story #4:</strong> Within the img-div element, I should see an img element with a corresponding <code>id="image"</code>.</li>
+                        
+                        <li class="text-style-2"><strong>User Story #5:</strong> Within the img-div element, I should see an element with a corresponding <code>id="img-caption"</code> that contains textual content describing the image shown in img-div.</li>
                     
-            <a class=active href="index.html">Home</a>
-            <a href="grade_eh_projects.html">Projects</a>
+                        <li class="text-style-2"><strong>User Story #6:</strong> I should see an element with a corresponding <code>id="tribute-info"</code>, which contains textual content describing the subject of the tribute page.</li>
+                
+                        <li class="text-style-2"><strong>User Story #7:</strong> I should see an a element with a corresponding <code>id="tribute-link"</code>, which links to an outside site that contains additional information about 
+                            the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").</li>
             
-    </div>
-    <h1 style="font-weight: bolder;font-size: 3vw">STILL UNDER CONSTRUCTION</h1>
-    <section1 class="row">
-        <div class="main">
-            <h1 style="font-weight: bold;">Introduction</h1>
-            <p>I am an aspiring programmer and developer, working towards becoming self sufficient and opening my own business providing web design, development, prgramming services and support.</p>
-            <h2 style="font-weight: bold;">Skills</h2>
-            <p>I have learned the majority of my skills in programming and website creation throuhg self teaching methods and personal projects.I have below a list of skills learned so far. <br>
-            Python 3.0<br>
-            HTML and CSS <br>
-            I am constantly learning new skills and languages and also have a variety of other soft skills to bring to any project I work on these include:<br>
-            --> Time Management<br>
-            --> Resource Allocation<br>
-            </p>
-        </div>
-    </section1>
-    <footer class="footer">Copyright 2020 - Grade Eh! Enterprises</footer>
-</body>
+                        <li class="text-style-2"><strong>User Story #8:</strong> The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.</li>
+        
+                        <li class="text-style-2"><strong>User Story #9:</strong> The img element should be centered within its parent element.</li>
+                    </ul>
+                </div>
+                <div class="project-tile">
+                    <h4 class="sub-heading-3">Survey Form</h4>
+                    <img src="survey_form.png" class="project-thumbnail-img">
+                </div>
+                <div class="project-tile">
+                    <h4 class="sub-heading-3">Product Landing Page</h4>
+                    <img src="product_landing_page.png" class="project-thumbnail-img">
+                </div>
+                <div class="project-tile">
+                    <h4 class="sub-heading-3">Technical Documentation Page</h4>
+                    <img src="tech-documentation.png" class="project-thumbnail-img">
+                </div>
+                <h2 class="sub-heading-1">Own Initiative</h2>
+
+            </section>
+            
+            <section id="external-section">
+                <h1 class="section-header">External Profiles</h1>
+                <a href="https://www.github.com/w-chase" target="_blank" id="profile-link">GitHub Portfolio</a>
+
+            </section>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
