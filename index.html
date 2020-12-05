@@ -7,22 +7,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="primary.css" rel="stylesheet">
         <link href="32x32_logo.png" rel="icon">
+        <link rel="stylesheet" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5a22d77e23.js" crossorigin="anonymous"></script>
+
     </head>
-    <body>
-        <header id="header-block">
-            <img src="cw_logo.svg" id="cw_logo" alt="Logo for w-chase">
-            <h1 id="page-title"></h1>Chase Williams</h1>
-        </header>
+    <body class="Page">
         <nav id="navbar">
-            <a href="#welcome-section">Welcome</a>
-            <a href="#projects">Projects</a>
-            <a href="#profile-section">Profile</a>
+            <a class="nav-link" href="#welcome-section">Welcome</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#profile-section">Profiles</a>
         </nav>
+        <header id="header-block">
+            <div><img src="cw_logo.svg" id="cw_logo" alt="Logo for w-chase"></div>
+            <div><h1 class="page-title-text" id="page-title">Chase Williams</h1></div>
+        </header>
         <main>
             <section id="welcome-section">
                 <h1 class="section-header">About Me</h1>
-                <h2 class="sub-heading-1">Background</h2>
-                <h2 class="sub-heading-1">Certifications</h2>
+                <p class="text-style-3">
+                    My professional life has been somewhat varied in the relatively few years 
+                    that I have been in the workforce, as many people do I started out in retail as a cart pusher, 
+                    while I attempted to complete a diploma course in Business Management, eventually worked my way 
+                    into a supervisory role but I had to find a way to make more money than retail could possibly 
+                    offer me. So I jumped off the post-secondary train to join the trades, passing through hydro-vac 
+                    swamper, welding shop laborer, drilling rig floorhand, shipper/receiver, warehouse picker, and 
+                    the industrial painting and coating industry for nearly a decade.
+
+                </p>
+                <p class="text-style-3">
+                    All through these jobs though I had a solid interest in computers, networks, and pretty much 
+                    anything technical, so just over a year ago from writing this page I began the task of learning 
+                    to program. The first language I dabbled in was Python3 I wrote a few small programs including a 
+                    Discord bot and began to work on a text-based computer game which is still in the early stages. 
+                    I then fell into the rabbit hole that is web design and development and its associated database 
+                    and server infrastructure, where I built a few web pages as projects. 
+
+                </p>
+                <p class="text-style-3">    
+                    I eventually plan to choose the computing discipline that I most enjoy and build my career into 
+                    that field utilizing all the various experiences I have had in my varied work history to bring 
+                    outside the box thinking to any project or team that I am a part of. I feel as though all the 
+                    jobs I have had helped to develop me into a person with a strong work ethic, a don't give up 
+                    attitude, and an ability to look at problems critically and find the best solution given the 
+                    available data. 
+
+                    </p>
+                <!-- <h2 class="sub-heading-1">Background Experience</h2> -->
+                <!-- <p class="text-style-3"></p> -->
+                <!-- <h2 class="sub-heading-1">Certifications</h2> -->
             </section>
 
             <section id="projects">
@@ -30,51 +63,169 @@
                 <h2 class="sub-heading-1">freeCodeCamp</h2>
                 <h3 class="sub-heading-2">Responsive Web Design Projects</h3>
                 <div class="project-tile">
-                    <h4 class="sub-heading-3">Tribute Page</h4>
-                    <img src="tribute_page.png" class="project-thumbnail-img">
-                    <a href="https://w-chase.github.io/FCCWebDes/" target="_blank">Visit the project</a>
-                    <p class="text-style-1">Required User Stories</p>
-                    <ul class="list-style-1">
-                        <li class="text-style-2"><strong>User Story #1:</strong>My tribute page should have an element with a corresponding <code>id="main"</code>, which contains all other elements.</li>
+                    <h4 class="sub-heading-3 title" >Tribute Page</h4>
+                    <div class="project-thumbnail-area">
+                        <img src="tribute_page.png" class="project-thumbnail-img">
+                        <p class="image-link-area"><a href="https://w-chase.github.io/FCCWebDes/" target="_blank" class="link-style-2">Visit the project</a></p>
+                    </div>
+                    <div class="user-stories">
+                        <p class="text-style-1">Required User Stories</p>
+                        <ul class="list-style-1">
+                            <li class="text-style-2"><strong>User Story #1:</strong>My tribute page should have an element with a corresponding <code>id="main"</code>, which contains all other elements.</li>
 
-                        <li class="text-style-2"><strong>User Story #2:</strong> I should see an element with a corresponding <code>id="title"</code>, which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").</li>
+                            <li class="text-style-2"><strong>User Story #2:</strong> I should see an element with a corresponding <code>id="title"</code>, which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").</li>
+                            
+                            <li class="text-style-2"><strong>User Story #3:</strong> I should see a div element with a corresponding <code>id="img-div"</code>.</li>
+                            
+                            <li class="text-style-2"><strong>User Story #4:</strong> Within the img-div element, I should see an img element with a corresponding <code>id="image"</code>.</li>
+                            
+                            <li class="text-style-2"><strong>User Story #5:</strong> Within the img-div element, I should see an element with a corresponding <code>id="img-caption"</code> that contains textual content describing the image shown in img-div.</li>
                         
-                        <li class="text-style-2"><strong>User Story #3:</strong> I should see a div element with a corresponding <code>id="img-div"</code>.</li>
-                        
-                        <li class="text-style-2"><strong>User Story #4:</strong> Within the img-div element, I should see an img element with a corresponding <code>id="image"</code>.</li>
-                        
-                        <li class="text-style-2"><strong>User Story #5:</strong> Within the img-div element, I should see an element with a corresponding <code>id="img-caption"</code> that contains textual content describing the image shown in img-div.</li>
+                            <li class="text-style-2"><strong>User Story #6:</strong> I should see an element with a corresponding <code>id="tribute-info"</code>, which contains textual content describing the subject of the tribute page.</li>
                     
-                        <li class="text-style-2"><strong>User Story #6:</strong> I should see an element with a corresponding <code>id="tribute-info"</code>, which contains textual content describing the subject of the tribute page.</li>
+                            <li class="text-style-2"><strong>User Story #7:</strong> I should see an a element with a corresponding <code>id="tribute-link"</code>, which links to an outside site that contains additional information about 
+                                the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").</li>
                 
-                        <li class="text-style-2"><strong>User Story #7:</strong> I should see an a element with a corresponding <code>id="tribute-link"</code>, which links to an outside site that contains additional information about 
-                            the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").</li>
+                            <li class="text-style-2"><strong>User Story #8:</strong> The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.</li>
             
-                        <li class="text-style-2"><strong>User Story #8:</strong> The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.</li>
-        
-                        <li class="text-style-2"><strong>User Story #9:</strong> The img element should be centered within its parent element.</li>
-                    </ul>
+                            <li class="text-style-2"><strong>User Story #9:</strong> The img element should be centered within its parent element.</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="project-tile">
                     <h4 class="sub-heading-3">Survey Form</h4>
-                    <img src="survey_form.png" class="project-thumbnail-img">
+                    <div class="project-thumbnail-area">
+                        <img src="survey_form.png" class="project-thumbnail-img">
+                        <p class="image-link-area"><a href="https://w-chase.github.io/FCCFormDes/" target="_blank" class="link-style-2">Visit the project</a></p>
+                    </div>
+                    <div class="user-stories">
+                        <p class="text-style-1">Required User Stories</p>
+                        <ul class="list-style-1">
+                            <li class="text-style-2"><strong>User Story #1:</strong> I can see a title with <code>id="title"</code> in H1 sized text.
+
+                            <li class="text-style-2"><strong>User Story #2:</strong> I can see a short explanation with <code>id="description"</code> in P sized text.
+
+                            <li class="text-style-2"><strong>User Story #3:</strong> I can see a form with <code>id="survey-form"</code>.
+
+                            <li class="text-style-2"><strong>User Story #4:</strong> Inside the form element, I am required to enter my name in a field with <code>id="name"</code>.
+
+                            <li class="text-style-2"><strong>User Story #5:</strong> Inside the form element, I am required to enter an email in a field with <code>id="email"</code>.
+
+                            <li class="text-style-2"><strong>User Story #6:</strong> If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+
+                            <li class="text-style-2"><strong>User Story #7:</strong> Inside the form, I can enter a number in a field with <code>id="number"</code>.
+
+                            <li class="text-style-2"><strong>User Story #8:</strong> If I enter non-numbers in the number input, I will see an HTML5 validation error.
+
+                            <li class="text-style-2"><strong>User Story #9:</strong> If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+
+                            <li class="text-style-2"><strong>User Story #10:</strong> For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: <code>id="name-label"</code>, <code>id="email-label"</code>, and <code>id="number-label"</code>.
+
+                            <li class="text-style-2"><strong>User Story #11:</strong> For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
+
+                            <li class="text-style-2"><strong>User Story #12:</strong> Inside the form element, I can select an option from a dropdown that has a corresponding <code>id="dropdown"</code>.
+
+                            <li class="text-style-2"><strong>User Story #13:</strong> Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+
+                            <li class="text-style-2"><strong>User Story #14:</strong> Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+
+                            <li class="text-style-2"><strong>User Story #15:</strong> Inside the form element, I am presented with a textarea at the end for additional comments.
+
+                            <li class="text-style-2"><strong>User Story #16:</strong> Inside the form element, I am presented with a button with <code>id="submit"</code> to submit all my inputs.
+                        </ul>
+                    </div>
                 </div>
                 <div class="project-tile">
                     <h4 class="sub-heading-3">Product Landing Page</h4>
-                    <img src="product_landing_page.png" class="project-thumbnail-img">
+                    <div class="project-thumbnail-area">
+                        <img src="product_landing_page.png" class="project-thumbnail-img">
+                        <p class="image-link-area"><a href="https://w-chase.github.io/FCCProdLand/" target="_blank" class="link-style-2">Visit the project</a></p>
+                    </div>
+                    <div class="user-stories">
+                        <p class="text-style-1">Required User Stories</p>
+                        <ul class="list-style-1">
+                            <li class="text-style-2"><strong>User Story #1:</strong> My product landing page should have a header element with a corresponding <code>id="header"</code>.
+
+                            <li class="text-style-2"><strong>User Story #2:</strong> I can see an image within the header element with a corresponding <code>id="header-img"</code>. A company logo would make a good image here.
+
+                            <li class="text-style-2"><strong>User Story #3:</strong> Within the #header element I can see a nav element with a corresponding <code>id="nav-bar"</code>.
+
+                            <li class="text-style-2"><strong>User Story #4:</strong> I can see at least three clickable elements inside the nav element, each with the class nav-link.
+
+                            <li class="text-style-2"><strong>User Story #5:</strong> When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+
+                            <li class="text-style-2"><strong>User Story #6:</strong> I can watch an embedded product video with <code>id="video"</code>.
+
+                            <li class="text-style-2"><strong>User Story #7:</strong> My landing page has a form element with a corresponding <code>id="form"</code>.
+
+                            <li class="text-style-2"><strong>User Story #8:</strong> Within the form, there is an input field with <code>id="email"</code> where I can enter an email address.
+
+                            <li class="text-style-2"><strong>User Story #9:</strong> The #email input field should have placeholder text to let the user know what the field is for.
+
+                            <li class="text-style-2"><strong>User Story #10:</strong> The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+
+                            <li class="text-style-2"><strong>User Story #11:</strong> Within the form, there is a submit input with a corresponding <code>id="submit"</code>.
+
+                            <li class="text-style-2"><strong>User Story #12:</strong> When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+
+                            <li class="text-style-2"><strong>User Story #13:</strong> The navbar should always be at the top of the viewport.
+
+                            <li class="text-style-2"><strong>User Story #14:</strong> My product landing page should have at least one media query.
+
+                            <li class="text-style-2"><strong>User Story #15:</strong> My product landing page should utilize CSS flexbox at least once.
+                        </ul>
+                    </div>
                 </div>
                 <div class="project-tile">
                     <h4 class="sub-heading-3">Technical Documentation Page</h4>
-                    <img src="tech-documentation.png" class="project-thumbnail-img">
+                    <div class="project-thumbnail-area">
+                        <img src="tech-documentation.png" class="project-thumbnail-img">
+                        <p class="image-link-area"><a href="https://w-chase.github.io/FCCTechDoc/" target="_blank" class="link-style-2">Visit the project</a></p>
+                    </div>
+                    <div class="user-stories">
+                        <p class="text-style-1">Required User Stories</p>
+                        <ul class="list-style-1">
+                            <li class="text-style-2"><strong>User Story #1:</strong> I can see a main element with a corresponding <code>id="main-doc"</code>, which contains the page's main content (technical documentation).
+
+                            <li class="text-style-2"><strong>User Story #2:</strong> Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
+
+                            <li class="text-style-2"><strong>User Story #3:</strong> The first element within each .main-section should be a header element which contains text that describes the topic of that section.
+
+                            <li class="text-style-2"><strong>User Story #4:</strong> Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding <code>id="JavaScript_and_Java"</code>).
+
+                            <li class="text-style-2"><strong>User Story #5:</strong> The .main-section elements should contain at least 10 p elements total (not each).
+
+                            <li class="text-style-2"><strong>User Story #6:</strong> The .main-section elements should contain at least 5 code elements total (not each).
+
+                            <li class="text-style-2"><strong>User Story #7:</strong> The .main-section elements should contain at least 5 li items total (not each).
+
+                            <li class="text-style-2"><strong>User Story #8:</strong> I can see a nav element with a corresponding <code>id="navbar"</code>.
+
+                            <li class="text-style-2"><strong>User Story #9:</strong> The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
+
+                            <li class="text-style-2"><strong>User Story #10:</strong> Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
+
+                            <li class="text-style-2"><strong>User Story #11:</strong> The header element in the navbar must come before any link (a) elements in the navbar.
+
+                            <li class="text-style-2"><strong>User Story #12:</strong> Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+
+                            <li class="text-style-2"><strong>User Story #13:</strong> When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
+
+                            <li class="text-style-2"><strong>User Story #14:</strong> On regular sized devices (laptops, desktops), the element with <code>id="navbar"</code> should be shown on the left side of the screen and should always be visible to the user.
+
+                            <li class="text-style-2"><strong>User Story #15:</strong> My Technical Documentation page should use at least one media query.
+                        </ul>
+                    </div>
                 </div>
-                <h2 class="sub-heading-1">Own Initiative</h2>
+                <!-- <h2 class="sub-heading-1">Own Initiative</h2> -->
 
             </section>
             
-            <section id="external-section">
+            <section id="profile-section">
                 <h1 class="section-header">External Profiles</h1>
-                <a href="https://www.github.com/w-chase" target="_blank" id="profile-link">GitHub Portfolio</a>
-
+                <p class="external-links"><i class="fab fa-github"></i><a href="https://www.github.com/w-chase" target="_blank" id="profile-link">GitHub Profile</a></p>
+                <p class="external-links"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/chase-e-williams/" target="_blank">LinkedIn Profile</a></p>
+                <p class="external-links"><i class="fab fa-free-code-camp"></i><a href="https://www.freecodecamp.org/w-chase" target="_blank" id="profile-link">freeCodeCamp.org Profile</a></p>
             </section>
         </main>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
